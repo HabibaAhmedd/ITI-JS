@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Hello</title>
+    </head>
+    <body>
+        
+        <script>
+        function Fullname() {
+        let firstName = document.getElementById("first").value;
+        let lastName = document.getElementById("last").value;
+        let fullName= `${firstName} ${lastName}`;
+        console.log(fullName);
+        confirm("Welcome "+fullName);
+        }
+
+
+        function Age(){
+        var userAge = document.getElementById("age").value;  
+        console.log(userAge);
+
+        var birthDate = new Date(userAge);
+        console.log(" birthDate"+ birthDate);
+
+        var difference=Date.now() - birthDate.getTime(); 
+     
+        var  ageDate = new Date(difference); 
+        var calculatedAge=   Math.abs(ageDate.getUTCFullYear() - 1970);
+        alert("Your age is "+ calculatedAge);
+        }
+
+
+        </script>
+
+        <h1>Hello</h1>
+        <div id="Welcome!">
+        <input placeholder="Enter First Name" id="first">
+        <input placeholder="Enter Last Name" id="last">
+        <button onclick="Fullname()">Enter  </button>
+        </div>
+
+        <input type="date" id="age" /> 
+        <button id="Agebtn"  onclick="Age();" >Calculate Age</button>
+    </body>
+    <footer>
+        
+    </footer>
+</html>

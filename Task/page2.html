@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calculator</title>
+    </head>
+    <body>
+        <script>
+          alert("This is the first release of a calculator that only has a summation feature");
+            function Calculater(){
+                let firstNum =parseInt( document.getElementById("first").value);
+                let lastNum = parseInt(document.getElementById("last").value);
+                let sum = firstNum + lastNum;
+                document.getElementById("answer").value = sum;
+                }
+    </script>
+
+        <div id="Calculater">
+            <input placeholder="Enter First Number" id="first">
+            <input placeholder="Enter Last Number" id="last">
+            <button onclick="Calculater()">Add</button>
+            <p>Sum = <input id="answer"></p>
+                    </div>
+            
+    </body>
+</html>
+
+
